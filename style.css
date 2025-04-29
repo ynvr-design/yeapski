@@ -1,0 +1,67 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: url("img/323.png") no-repeat center center fixed;
+  background-size: cover;
+  font-family: monospace;
+  overflow: hidden;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(circle at center, #111 0%, #000 100%);
+  z-index: -1;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  top: 30%;
+}
+
+h1 {
+  font-size: 48px;
+  margin-bottom: 40px;
+  letter-spacing: 4px;
+}
+
+.button-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+button {
+  background-color: #3995ec;
+  color: #000000;
+  border: 5px solid #0021db;
+  border-radius: 20px;
+  padding: 14px 28px;
+  font-size: 50px;
+  cursor: not-allowed;
+
+  z-index: 1;
+  position: relative;
+}
+
+button:hover {
+  border-color: #000000;
+  color: #990000;
+}
+
+.prison-bars div {
+  flex: 1;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(1px);
+}
+
+#error {
+  margin-top: 30px;
+  font-size: 48px;
+  color: #ff4444;
+  display: none;
+}
